@@ -48,8 +48,11 @@ cd url-shortner
 ```bash
 composer install
 ```
+## 4. Database File
 
-### 4. Create Environment File
+SQL File Location: `database/url_shortener.sql`
+
+### 5. Create Environment File
 
 ```bash
 cp .env.example .env
@@ -61,13 +64,13 @@ For Windows PowerShell:
 Copy-Item .env.example .env
 ```
 
-### 5. Generate Application Key
+### 6. Generate Application Key
 
 ```bash
 php artisan key:generate
 ```
 
-### 6. Configure Database
+### 7. Configure Database
 
 Update your `.env` file:
 
@@ -82,13 +85,13 @@ DB_PASSWORD=
 
 Create a MySQL database named `url_shorter`.
 
-### 7. Run Migrations and Seeders
+### 8. Run Migrations and Seeders
 
 ```bash
 php artisan migrate --seed
 ```
 
-### 8. Start Laravel Server
+### 9. Start Laravel Server
 
 ```bash
 php artisan serve
